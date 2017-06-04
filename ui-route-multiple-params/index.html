@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Basic AngularJS Application</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">	
+</head>
+<body>
+	<header> 
+		<nav class="navbar navbar-default"> 
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a class="navbar-brand" href="#">AngularJS Routing App</a> 
+				</div>	 
+				<div class="nav navbar-nav navbar-right"> 
+						<li><a ui-sref="home"><i class="fa fa-home"></i>Home</a></li> 
+						<li><a ui-sref="register({ 
+						                         contactId: 9912928933, 
+						                          email: 'srinuswan47@gmail.com'
+
+						                         })"><i class="fa fa-home"></i>Register</a></li> 
+						<li><a ui-sref="login"><i class="fa fa-home"></i>Login</a></li> 
+				</div>			 
+			</div> 
+			</nav> 
+	</header> 
+	<div class="container">
+		
+		<ui-view></ui-view>
+
+	</div>
+
+	<script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
